@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Max</title>
+
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/carrito.css">
+    <link rel="stylesheet" href="assets/css/paginas.css">
+
+    <noscript><style>.cat,.plan,.service{opacity:1!important;transform:none!important}</style></noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="scroll-top">
+        ↑
+    </div>
+
+<!-- HEADER -->
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <a href="index.html" class="logo">
+            FITNESS MAX
+        </a>
+
+        <nav class="nav">
+            <a href="index.html" class="active">Inicio</a>
+            <a href="index.html#planes">Planes</a>
+            <a href="actividades.html">Actividades</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="productos.html">Productos</a>
+            <a href="carrito.html">🛒 Carrito</a>
+        </nav>
+
+        <div class="actions">
+
+            <a href="cuenta.html" class="login">
+                👤 Mi Cuenta
+            </a>
+
+            <button class="menu-btn">
+                ☰
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+<!-- HERO -->
+<section class="hero">
+
+    <div class="hero-content">
+
+        <span class="badge">FITNESS MAX</span>
+
+        <h1>TRANSFORMÁ TU</h1>
+        <h2>CUERPO</h2>
+
+        <p>
+            Entrená con máquinas modernas, entrenadores certificados
+            y un ambiente diseñado para que superes tus límites.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#planes" class="btn btn-red">
+                VER PLANES
+            </a>
+
+            <a href="#ubicacion" class="btn btn-outline">
+                UBICACIÓN
+            </a>
+
+        </div>
+
+        <div class="hero-status">
+
+            <span>🟢 Abierto ahora</span>
+            <span>🕐 06:00 - 23:00</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CATEGORÍAS -->
+<section class="categories">
+
+    <div class="cat">🏋️ Musculación</div>
+    <div class="cat">🏃 Cardio</div>
+    <div class="cat">🥊 Boxeo</div>
+    <div class="cat">🚴 Spinning</div>
+    <div class="cat">🤸 Funcional</div>
+    <div class="cat">🧘 Yoga</div>
+
+</section>
+
+<!-- PLANES -->
+<section class="plans" id="planes">
+
+    <h2>Nuestros Planes</h2>
+
+    <div class="plans-grid" id="plans-grid">
+
+        <div class="plan">
+            <h3>Básico</h3>
+            <p>Acceso al gimnasio · Sala de musculación · Cardio · Vestuarios</p>
+            <span>$18.000</span>
+            <button class="btn-add" data-add data-id="plan-1" data-nombre="Plan Básico" data-precio="18000">
+                🛒 Agregar
+            </button>
+        </div>
+
+        <div class="plan highlight">
+            <h3>Premium</h3>
+            <p>Todo el Plan Básico · Clases grupales · Funcional · Boxeo · Yoga</p>
+            <span>$26.000</span>
+            <button class="btn-add" data-add data-id="plan-2" data-nombre="Plan Premium" data-precio="26000">
+                🛒 Agregar
+            </button>
+        </div>
+
+        <div class="plan">
+            <h3>Full</h3>
+            <p>Acceso ilimitado · Todas las clases · Nutricionista · Personal Trainer · Seguimiento mensual</p>
+            <span>$35.000</span>
+            <button class="btn-add" data-add data-id="plan-3" data-nombre="Plan Full" data-precio="35000">
+                🛒 Agregar
+            </button>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SERVICIOS -->
+<section class="services">
+
+    <div class="service">
+        👨‍🏫 Personal Trainer
+    </div>
+
+    <div class="service">
+        🥗 Nutrición
+    </div>
+
+    <div class="service">
+        🤸 Clases grupales
+    </div>
+
+</section>
+
+<!-- UBICACIÓN -->
+<section class="location" id="ubicacion">
+
+    <div class="map">
+        <iframe
+            src="https://www.google.com/maps?q=Av.+San+Martín+1234,+Corrientes,+Argentina&output=embed"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy">
+        </iframe>
+    </div>
+
+    <div class="location-info">
+
+        <h3>Fitness Max</h3>
+
+        <p>📍 Av. San Martín 1234</p>
+        <p>Corrientes, Argentina</p>
+
+        <a href="https://www.google.com/maps/search/?api=1&query=Av.+San+Martín+1234,+Corrientes,+Argentina" target="_blank" rel="noopener">
+            Cómo llegar →
+        </a>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+    <p>© 2026 Fitness Max - Todos los derechos reservados · <a href="cuenta.html#admin" style="color:#777">Administrador</a></p>
+
+</footer>
+
+<!-- CARRITO FLOTANTE (el botón y el panel los crea carrito.js) -->
+<script src="assets/js/validar.js"></script>
+<script src="assets/js/fm-local.js"></script>
+<script src="assets/js/carrito.js"></script>
+<script>
+/* Los planes ya vienen escritos en el HTML; si el servidor responde, se actualizan con los datos de la base. */
+(function () {
+    var grid = document.getElementById('plans-grid');
+    if (!grid || !window.fetch) return;
+    fetch('api_planes.php').then(function (r) { return r.json(); }).then(function (res) {
+        if (!res.ok || !res.planes.length) return;
+        grid.innerHTML = '';
+        res.planes.forEach(function (pl, i) {
+            var precio = parseFloat(pl.precio);
+            var card = document.createElement('div');
+            card.className = 'plan visible' + (i === 1 ? ' highlight' : '');
+            var h3 = document.createElement('h3'); h3.textContent = pl.nombre;
+            var p = document.createElement('p'); p.textContent = pl.descripcion || '';
+            var sp = document.createElement('span'); sp.textContent = '$' + precio.toLocaleString('es-AR');
+            var b = document.createElement('button');
+            b.className = 'btn-add'; b.textContent = '🛒 Agregar';
+            b.setAttribute('data-add', ''); b.setAttribute('data-id', 'plan-' + pl.id);
+            b.setAttribute('data-nombre', 'Plan ' + pl.nombre); b.setAttribute('data-precio', precio);
+            card.appendChild(h3); card.appendChild(p); card.appendChild(sp); card.appendChild(b);
+            grid.appendChild(card);
+        });
+    }).catch(function () { /* sin servidor: quedan los planes del HTML */ });
+})();
+</script>
+
+
+</body>
+</html>

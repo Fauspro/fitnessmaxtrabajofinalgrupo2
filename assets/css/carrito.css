@@ -1,0 +1,82 @@
+.cart-fab{position:fixed;right:20px;bottom:20px;z-index:1200;width:56px;height:56px;border-radius:50%;border:0;background:#ff1e1e;color:#fff;font-size:24px;cursor:pointer}
+.cart-count{position:absolute;top:-4px;right:-4px;background:#fff;color:#111;border-radius:10px;font-size:12px;padding:1px 6px;font-weight:700}
+.cart-fab.bump{animation:bump .3s}@keyframes bump{50%{transform:scale(1.2)}}
+.cart-overlay{position:fixed;inset:0;background:rgba(0,0,0,.6);opacity:0;pointer-events:none;transition:.3s;z-index:1300}
+.cart-overlay.open{opacity:1;pointer-events:auto}
+.cart-panel{position:fixed;top:0;right:-380px;width:360px;max-width:90%;height:100%;background:#1b1b1b;color:#fff;z-index:1400;display:flex;flex-direction:column;transition:.3s}
+.cart-panel.open{right:0}
+.cart-head{display:flex;justify-content:space-between;align-items:center;padding:18px;border-bottom:1px solid #333}
+.cart-close{background:none;border:0;color:#fff;font-size:20px;cursor:pointer}
+.cart-items{flex:1;overflow:auto;padding:15px}
+.cart-item{display:flex;gap:10px;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:1px solid #2a2a2a}
+.cart-item-info small{display:block;color:#aaa}
+.cart-qty{display:flex;gap:8px;align-items:center}
+.cart-qty button,.cart-remove{background:#333;color:#fff;border:0;border-radius:6px;padding:4px 9px;cursor:pointer}
+.cart-empty{color:#aaa;text-align:center;margin-top:30px}
+.cart-foot{padding:18px;border-top:1px solid #333}
+.cart-total{display:flex;justify-content:space-between;font-weight:700;margin-bottom:12px}
+.cart-checkout,.cart-clear{width:100%;padding:12px;border:0;border-radius:8px;cursor:pointer;font-weight:700;margin-top:8px}
+.cart-checkout{background:#ff1e1e;color:#fff}.cart-clear{background:#333;color:#ccc}
+.carrito-pagina{max-width:700px;margin:0 auto;padding:130px 20px 60px;color:#fff}
+.carrito-resumen{margin-top:20px}
+.carrito-seguir{display:block;margin-top:18px;color:#aaa;text-decoration:none}
+/* Finalizar compra */
+.co-overlay{position:fixed;inset:0;background:rgba(0,0,0,.7);display:none;align-items:center;justify-content:center;z-index:1500;padding:16px}
+.co-overlay.open{display:flex}
+.co-box{position:relative;background:#1b1b1b;color:#fff;border-radius:14px;padding:28px;width:420px;max-width:100%}
+.co-box h3{font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:1px;margin-bottom:6px}
+.co-sub{color:#aaa;font-size:14px;margin-bottom:16px}
+.co-box label{display:grid;gap:6px;font-size:14px;margin-bottom:12px}
+.co-box input{padding:12px;border-radius:8px;border:1px solid #333;background:#262626;color:#fff;font:inherit}
+.co-close{position:absolute;top:12px;right:14px;background:none;border:0;color:#fff;font-size:20px;cursor:pointer}
+.co-error{color:#ff6b6b;font-size:13px;min-height:18px;margin-bottom:8px}
+.co-send,.co-fin,.co-wa{display:block;width:100%;padding:12px;border:0;border-radius:8px;font-weight:700;cursor:pointer;text-align:center;text-decoration:none;font:inherit;font-weight:700;margin-top:8px}
+.co-send,.co-wa{background:#ff1e1e;color:#fff}
+.co-fin{background:#333;color:#ccc}
+.co-send:disabled{opacity:.6;cursor:wait}
+.co-ok-txt{color:#ddd;line-height:1.6;margin:10px 0 14px}
+
+/* ===== Formulario de finalizar compra (validaciones y pago) ===== */
+.co-box{max-height:92vh;overflow-y:auto}
+.co-err{color:#ff6b6b;font-size:12px;min-height:0}
+.co-err:empty{display:none}
+.co-box input:focus{outline:none;border-color:#ff1e1e}
+.co-pago{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px}
+.co-pago-t{grid-column:1/-1;font-size:14px}
+.co-pago .co-err{grid-column:1/-1}
+.co-radio{display:flex!important;align-items:center;gap:8px;grid-template-columns:none;margin:0!important;padding:12px;border:1px solid #333;border-radius:8px;background:#262626;cursor:pointer}
+.co-radio:hover{border-color:#ff1e1e}
+.co-radio input{width:auto;padding:0;accent-color:#ff1e1e}
+.co-fila{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.co-efectivo{background:#262626;border-left:3px solid #ff1e1e;padding:10px 12px;border-radius:6px;font-size:13px;color:#ddd;margin-bottom:12px}
+.co-total{color:#ff1e1e}
+
+/* ===== Página del carrito con los colores del sitio (negro, rojo y blanco) ===== */
+.carrito-pagina{max-width:760px}
+.carrito-pagina h1{font-family:'Bebas Neue',sans-serif;font-size:64px;letter-spacing:2px;color:#ff1e1e;line-height:1}
+.carrito-sub{color:#bbb;margin:8px 0 26px}
+.carrito-pagina .cart-item{background:#1b1b1b;border:1px solid #2a2a2a;border-radius:12px;padding:16px 18px;margin-bottom:12px;transition:.3s}
+.carrito-pagina .cart-item:hover{border-color:#ff1e1e}
+.carrito-pagina .cart-item-info strong{font-size:16px}
+.carrito-pagina .cart-item-info small{color:#aaa;margin-top:4px}
+.carrito-pagina .cart-qty button{background:#2a2a2a;font-size:16px;width:32px;height:32px;padding:0;transition:.2s}
+.carrito-pagina .cart-qty button:hover,.carrito-pagina .cart-remove:hover{background:#ff1e1e}
+.carrito-pagina .cart-remove{background:#2a2a2a;transition:.2s}
+.carrito-pagina .cart-empty{background:#1b1b1b;border:1px dashed #333;border-radius:12px;padding:40px 20px;color:#aaa}
+.carrito-resumen{background:linear-gradient(135deg,#111,#2a0a0a);border:1px solid #2a2a2a;border-radius:14px;padding:22px}
+.carrito-resumen .cart-total{font-size:24px;margin-bottom:16px}
+.carrito-resumen .cart-total span:last-child{color:#ff1e1e;font-family:'Bebas Neue',sans-serif;font-size:34px}
+.carrito-acciones{display:grid;grid-template-columns:2fr 1fr;gap:12px}
+.carrito-acciones button{margin-top:0}
+.carrito-pagina .cart-checkout:hover{background:#c20f0f}
+.carrito-pagina .cart-clear:hover{background:#444;color:#fff}
+.carrito-seguir:hover{color:#ff1e1e}
+@media(max-width:600px){.carrito-acciones{grid-template-columns:1fr}.carrito-pagina h1{font-size:48px}}
+
+/* Corrección: los campos no deben desbordar la caja del formulario */
+.co-box{overflow-x:hidden}
+.co-box input{width:100%;min-width:0}
+.co-box label{min-width:0}
+.co-fila label{min-width:0}
+.co-radio input{width:auto}
+.co-fila{align-items:start}

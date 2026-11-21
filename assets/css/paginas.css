@@ -1,0 +1,69 @@
+.page-dark{background:#0d0d0d;color:#fff;font-family:'Montserrat',sans-serif}
+.about-hero{padding:150px 20px 60px;text-align:center;background:linear-gradient(135deg,#111,#2a0a0a)}
+.about-hero h1{font-family:'Bebas Neue',sans-serif;font-size:64px;color:#ff1e1e;letter-spacing:2px}
+.about-content p{max-width:700px;margin:15px auto 0;color:#ccc;line-height:1.7}
+.about-section{max-width:1100px;margin:0 auto;padding:60px 20px}
+.about-section h2,.team h2{font-family:'Bebas Neue',sans-serif;font-size:40px;margin-bottom:20px}
+.about-section p{color:#bbb;line-height:1.7}
+.values-grid,.team-grid,.clases-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.value-card,.team-card,.clase-card{background:#1b1b1b;border:1px solid #2a2a2a;border-radius:14px;padding:25px}
+.value-card h3,.clase-card h3,.team-card h3{margin-bottom:8px}
+.value-card p,.team-card p,.clase-card p{color:#aaa;font-size:14px;margin-top:6px}
+.value-card .ico{font-size:34px}
+.team{max-width:1100px;margin:0 auto;padding:20px 20px 70px}
+.team-card{text-align:center}.avatar{font-size:48px}
+.plan-tag{color:#ff6b6b!important;font-weight:600}
+.form-web{display:grid;gap:15px;max-width:520px}
+.form-web label{display:grid;gap:6px;font-size:14px}
+.form-web input,.form-web select,.form-web textarea{padding:13px;border-radius:8px;border:1px solid #333;background:#262626;color:#fff;font:inherit}
+.form-web .btn-red{border:0;background:#ff1e1e;color:#fff;padding:14px;border-radius:8px;font-weight:700;cursor:pointer}
+.aviso{padding:12px;border-radius:8px;margin-bottom:15px}.aviso.ok{background:#12301a;color:#6bff8e}.aviso.error{background:#3a1515;color:#ff6b6b}
+.tabla-wrap{overflow-x:auto}
+.tabla-web{width:100%;border-collapse:collapse;font-size:14px}
+.tabla-web th,.tabla-web td{padding:12px 10px;border-bottom:1px solid #2a2a2a;text-align:left;color:#ddd}
+.tabla-web th{color:#ff6b6b;font-weight:600}
+.est-pend{color:#ffb74d!important;font-weight:600}.est-ok{color:#6bff8e!important}
+.btn-mini{background:#333;color:#fff;border:0;border-radius:6px;padding:6px 12px;cursor:pointer;font:inherit;font-size:13px}.btn-mini:hover{background:#ff1e1e}
+/* Calendario de reservas */
+.cal-wrap{max-width:520px;margin-top:6px}
+.cal-title{font-size:14px;margin-bottom:8px;color:#bbb}
+.cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:6px}
+.cal-head{text-align:center;font-size:12px;color:#888;padding:4px 0}
+.cal-day{background:#1b1b1b;border:1px solid #2a2a2a;border-radius:8px;min-height:54px;padding:4px;font:inherit;font-size:13px;color:#666;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px}
+.cal-day small{font-size:10px;color:inherit}
+.cal-day.libre{color:#fff;border-color:#444;cursor:pointer}
+.cal-day.libre:hover{border-color:#ff1e1e}
+.cal-day.sel{background:#ff1e1e;border-color:#ff1e1e;color:#fff}
+.cal-day.completo{color:#ff6b6b;text-decoration:line-through}
+.cal-ayuda{font-size:13px;color:#aaa;margin-top:8px}
+/* Datos de contacto (Nosotros) */
+.contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-bottom:28px}
+.contact-card{display:block;background:#1b1b1b;border:1px solid #2a2a2a;border-radius:14px;padding:25px;text-align:center;text-decoration:none;color:#fff;transition:.3s}
+a.contact-card:hover{border-color:#ff1e1e;transform:translateY(-4px)}
+.contact-card .ico{font-size:34px}
+.contact-card h3{margin:8px 0 6px}
+.contact-card p{color:#bbb;font-size:14px;word-break:break-word}
+.btn-wsp{display:inline-block;background:#25d366;color:#fff;padding:14px 26px;border-radius:10px;text-decoration:none;font-weight:700;transition:.3s}
+.btn-wsp:hover{background:#1ebe5b;transform:translateY(-3px)}
+/* Caja de preguntas (Nosotros) */
+.preg-intro{color:#bbb;margin-bottom:20px}
+.preg-form{display:grid;gap:14px;max-width:640px;margin-bottom:34px}
+.preg-form label{display:grid;gap:6px;font-size:14px}
+.preg-form input,.preg-form textarea{padding:12px;border-radius:8px;border:1px solid #333;background:#1b1b1b;color:#fff;font:inherit;resize:vertical}
+.preg-form input:focus,.preg-form textarea:focus{outline:none;border-color:#ff1e1e}
+.preg-err{color:#ff6b6b;font-size:12px}.preg-err:empty{display:none}
+.preg-count{color:#888;font-size:12px;text-align:right}
+.preg-estado{font-size:14px}.preg-estado.mal{color:#ff6b6b}.preg-estado.bien{color:#6bff8e}
+.preg-form .btn-red:disabled{opacity:.6;cursor:wait}
+.preg-titulo{font-family:'Bebas Neue',sans-serif;font-size:30px;letter-spacing:1px;margin-bottom:14px}
+.preg-lista{display:grid;gap:14px}
+.preg-card{background:#1b1b1b;border:1px solid #2a2a2a;border-left:3px solid #ff1e1e;border-radius:12px;padding:16px 18px}
+.preg-cab{display:flex;justify-content:space-between;gap:10px;margin-bottom:8px;flex-wrap:wrap}
+.preg-cab span{color:#888;font-size:12px}
+.preg-card p{color:#ddd;line-height:1.6;white-space:pre-wrap;word-break:break-word}
+.preg-vacio{color:#aaa}
+
+/* Ajustes: botón de la caja de preguntas y anclas debajo del menú fijo */
+.preg-form .btn-red{border:0;background:#ff1e1e;color:#fff;padding:14px;border-radius:8px;font-weight:700;font-size:15px;cursor:pointer;transition:.3s}
+.preg-form .btn-red:hover:not(:disabled){background:#c20f0f}
+#preguntas,#contacto-datos{scroll-margin-top:90px}

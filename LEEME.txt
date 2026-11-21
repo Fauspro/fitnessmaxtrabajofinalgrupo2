@@ -1,0 +1,21 @@
+FITNESS MAX - versión HTML (público) + admin PHP
+================================================
+
+PÚBLICO (HTML, sin PHP ni base de datos)  -> abrir index.html con doble clic
+  index.html, productos.html, actividades.html, nosotros.html, carrito.html,
+  activar.html (crear cuenta de socio), cuenta.html (ingresar / mi cuenta)
+  - Los planes, clases y productos están en assets/js/fm-local.js
+  - Lo que hace el visitante (pedidos, preguntas, cuenta, reservas) se guarda
+    en SU navegador (localStorage). No se comparte con otros ni con el admin.
+
+ADMINISTRADOR (PHP + MySQL)  -> necesita XAMPP (Apache y MySQL)
+  - Importar sql/schema.sql en MySQL (base "tienda").
+  - Abrir http://localhost/gimnasio_fitness_max/adminn/login.php
+  - Usuario: admin   Clave: admin
+    (en el sitio: botón "Administrador" del pie > mismo login que los socios > usuario admin)
+    La primera vez que se entra con admin/admin, la clave queda guardada en la base.
+    Cambiala antes de usarlo en serio.
+
+IMPORTANTE: el admin y el sitio público ya no comparten datos. Lo que se cambie
+en el admin (planes, productos, socios, pedidos) NO aparece en el sitio HTML.
+Para cambiar planes/clases/productos del sitio, editar assets/js/fm-local.js.

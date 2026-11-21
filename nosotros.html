@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros - Fitness Max</title>
+
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/carrito.css">
+    <link rel="stylesheet" href="assets/css/paginas.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="page-dark">
+
+<!-- HEADER -->
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <a href="index.html" class="logo">FITNESS MAX</a>
+
+        <nav class="nav">
+            <a href="index.html">Inicio</a>
+            <a href="index.html#planes">Planes</a>
+            <a href="actividades.html">Actividades</a>
+            <a href="nosotros.html" class="active">Nosotros</a>
+            <a href="productos.html">Productos</a>
+            <a href="carrito.html">🛒 Carrito</a>
+        </nav>
+
+        <div class="actions">
+            <a href="cuenta.html" class="login">Mi cuenta</a>
+            <button class="menu-btn" aria-label="Menú">☰</button>
+        </div>
+
+    </div>
+
+</header>
+
+<!-- HERO NOSOTROS -->
+<section class="about-hero"><div class="about-content">
+    <h1>QUIÉNES SOMOS</h1>
+    <p>En <strong>Fitness Max</strong> somos un gimnasio dedicado a transformar cuerpos y mejorar la calidad de vida de nuestros alumnos. Creemos en la disciplina, la constancia y la motivación diaria.</p>
+</div></section>
+
+<section class="about-section">
+    <h2>Nuestra Historia</h2>
+    <p>Fitness Max nació con el objetivo de crear un espacio moderno, accesible y motivador para todas las personas que quieran mejorar su salud física y mental.</p>
+</section>
+
+<section class="about-section">
+    <h2>Nuestros Valores</h2>
+    <div class="values-grid">
+        <div class="value-card"><div class="ico">💪</div><h3>Disciplina</h3><p>Entrenamos con constancia y método: los resultados llegan cuando cumplís tu rutina todos los días.</p></div>
+        <div class="value-card"><div class="ico">🔥</div><h3>Motivación</h3><p>Un ambiente que te empuja a superar tus límites, con entrenadores que te acompañan en cada serie.</p></div>
+        <div class="value-card"><div class="ico">🧠</div><h3>Constancia</h3><p>Metas realistas y seguimiento mensual para que el hábito se sostenga en el tiempo.</p></div>
+        <div class="value-card"><div class="ico">🤝</div><h3>Comunidad</h3><p>Somos un equipo: socios y profesores que se apoyan y celebran cada logro.</p></div>
+    </div>
+</section>
+
+<section class="team">
+    <h2>Entrenadores</h2>
+    <div class="team-grid">
+        <div class="team-card"><div class="avatar">👨‍🏫</div><h3>Pablo González</h3><p>Especialista en musculación</p></div>
+        <div class="team-card"><div class="avatar">👩‍🏫</div><h3>Coach Laura</h3><p>Nutrición deportiva</p></div>
+        <div class="team-card"><div class="avatar">👨‍🏫</div><h3>Coach Diego</h3><p>Entrenamiento funcional</p></div>
+    </div>
+</section>
+
+<!-- PREGUNTAS Y OPINIONES -->
+<section class="about-section" id="preguntas">
+    <h2>Preguntas y opiniones</h2>
+    <p class="preg-intro">Dejanos tu consulta o contanos qué te parece Fitness Max. Tu mensaje se publica acá abajo.</p>
+
+    <form class="preg-form" id="preg-form" novalidate autocomplete="off">
+        <label>Tu nombre
+            <input id="preg-nombre" maxlength="50" placeholder="Solo letras">
+            <small class="preg-err" id="err-nombre"></small>
+        </label>
+        <label>Tu pregunta u opinión
+            <textarea id="preg-mensaje" rows="4" maxlength="300" placeholder="Escribí tu pregunta u opinión (mínimo 5 caracteres)"></textarea>
+            <small class="preg-count"><span id="preg-cuenta">0</span>/300</small>
+            <small class="preg-err" id="err-mensaje"></small>
+        </label>
+        <p class="preg-estado" id="preg-estado"></p>
+        <button type="submit" class="btn-red" id="preg-enviar">PUBLICAR</button>
+    </form>
+
+    <h3 class="preg-titulo">Lo que dicen nuestros socios</h3>
+    <div id="preg-lista" class="preg-lista"><p class="preg-vacio">Cargando...</p></div>
+</section>
+
+<!-- CONTACTO -->
+<section class="about-section contacto-info" id="contacto-datos">
+    <h2>Contactanos</h2>
+    <div class="contact-grid">
+        <a class="contact-card" href="tel:+543775448912">
+            <div class="ico">📞</div>
+            <h3>Teléfono</h3>
+            <p>+54 3775 448912</p>
+        </a>
+        <a class="contact-card" href="mailto:GymFitnessmax@gmail.com">
+            <div class="ico">✉️</div>
+            <h3>Gmail</h3>
+            <p>GymFitnessmax@gmail.com</p>
+        </a>
+        <div class="contact-card">
+            <div class="ico">📍</div>
+            <h3>Dirección</h3>
+            <p>Av. Libertador 123</p>
+        </div>
+    </div>
+    <a class="btn btn-wsp" href="https://wa.me/5493775448912?text=Hola!%20Quiero%20consultar%20por%20Fitness%20Max" target="_blank" rel="noopener">💬 Escribinos por WhatsApp</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+    <p>© 2026 Fitness Max - Todos los derechos reservados · <a href="cuenta.html#admin" style="color:#777">Administrador</a></p>
+
+</footer>
+
+<script src="assets/js/validar.js"></script>
+<script src="assets/js/fm-local.js"></script>
+<script src="assets/js/carrito.js"></script>
+<script src="assets/js/preguntas.js"></script>
+</body>
+</html>

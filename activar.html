@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activar cuenta | Fitness Max</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/carrito.css">
+    <link rel="stylesheet" href="assets/css/paginas.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="page-dark" data-page="activar">
+<header class="site-header">
+    <div class="header-inner">
+        <a href="index.html" class="logo">FITNESS MAX</a>
+        <nav class="nav">
+            <a href="index.html">Inicio</a>
+            <a href="index.html#planes">Planes</a>
+            <a href="actividades.html">Actividades</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="productos.html">Productos</a>
+            <a href="carrito.html">🛒 Carrito</a>
+        </nav>
+        <div class="actions">
+            <a href="cuenta.html" class="login">👤 Mi Cuenta</a>
+            <button class="menu-btn" aria-label="Menú">☰</button>
+        </div>
+    </div>
+</header>
+<section class="about-hero"><div class="about-content"><h1>ACTIVAR MI CUENTA</h1><p>Creá tu cuenta de socio para reservar clases y ver tus pagos.</p></div></section>
+<section class="about-section">
+    <div id="msg-activar"></div>
+    <form class="form-web" id="form-activar">
+        <label>Nombre y apellido<input id="a-nombre" required maxlength="50"></label>
+        <label>DNI<input id="a-dni" required inputmode="numeric" maxlength="9" pattern="[0-9]{7,9}" title="Solo números (7 a 9 dígitos)"></label>
+        <label>Email<input type="email" id="a-email" required maxlength="100"></label>
+        <label>Plan<select id="a-plan"></select></label>
+        <label>Contraseña (mínimo 6 caracteres)<input type="password" id="a-clave" required minlength="6" maxlength="72" autocomplete="new-password"></label>
+        <label>Repetir contraseña<input type="password" id="a-clave2" required minlength="6" maxlength="72" autocomplete="new-password"></label>
+        <button type="submit" class="btn-red">ACTIVAR CUENTA</button>
+    </form>
+    <a href="cuenta.html" id="a-ingresar" class="btn btn-red" style="display:none">INGRESAR</a>
+    <p style="margin-top:20px" id="a-extra"><a href="cuenta.html" style="color:#aaa">← Ya tengo cuenta</a></p>
+</section>
+<footer><p>© 2026 Fitness Max - Todos los derechos reservados · <a href="cuenta.html#admin" style="color:#777">Administrador</a></p></footer>
+<script src="assets/js/validar.js"></script>
+<script src="assets/js/fm-local.js"></script>
+<script src="assets/js/carrito.js"></script>
+<script src="assets/js/paginas-local.js"></script>
+</body>
+</html>

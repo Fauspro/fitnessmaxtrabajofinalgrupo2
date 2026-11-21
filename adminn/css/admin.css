@@ -1,0 +1,511 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #0b0b0b;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+
+/* CONTENEDOR */
+
+.admin-container {
+    min-height: 100vh;
+}
+
+
+/* SIDEBAR */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 260px;
+    height: 100vh;
+    background: #111;
+    border-right: 1px solid #292929;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    padding: 25px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 32px;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #292929;
+}
+
+.logo span {
+    color: #e50914;
+}
+
+
+/* USUARIO */
+
+.admin-user {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 20px;
+    border-bottom: 1px solid #292929;
+}
+
+.avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #e50914;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.admin-user strong {
+    display: block;
+    font-size: 13px;
+}
+
+.admin-user small {
+    display: block;
+    color: #777;
+    font-size: 11px;
+    margin-top: 4px;
+}
+
+
+/* MENU */
+
+.menu {
+    padding: 15px 10px;
+    flex: 1;
+}
+
+.menu a {
+    display: block;
+    padding: 13px 15px;
+    margin-bottom: 5px;
+    border-radius: 6px;
+    color: #aaa;
+    font-size: 13px;
+    transition: 0.2s;
+}
+
+.menu a:hover {
+    background: #1d1d1d;
+    color: #fff;
+}
+
+.menu a.active {
+    background: #e50914;
+    color: #fff;
+}
+
+
+/* PARTE INFERIOR */
+
+.sidebar-bottom {
+    padding: 12px 10px;
+    border-top: 1px solid #292929;
+}
+
+.sidebar-bottom a {
+    display: block;
+    padding: 12px 15px;
+    color: #aaa;
+    font-size: 13px;
+    border-radius: 6px;
+    margin-bottom: 4px;
+}
+
+.sidebar-bottom a:hover {
+    background: #1d1d1d;
+    color: #fff;
+}
+
+.sidebar-bottom .logout:hover {
+    color: #ff3030;
+    background: #2b1111;
+}
+
+
+/* CONTENIDO */
+
+.main {
+    margin-left: 260px;
+    min-height: 100vh;
+}
+
+
+/* HEADER */
+
+.topbar {
+    height: 85px;
+    background: #111;
+    border-bottom: 1px solid #292929;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 35px;
+}
+
+.top-label {
+    color: #e50914;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.topbar h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 27px;
+    letter-spacing: 1px;
+    margin-top: 3px;
+}
+
+.top-user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #aaa;
+    font-size: 12px;
+}
+
+.avatar-small {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-button {
+    display: none;
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: 25px;
+}
+
+
+/* CONTENIDO */
+
+.content {
+    padding: 35px;
+}
+
+
+/* BIENVENIDA */
+
+.welcome {
+    min-height: 170px;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #321b1b;
+    background: linear-gradient(100deg, #1b0808, #151515);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.welcome span,
+.section-title span,
+.panel-header span {
+    color: #e50914;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.welcome h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 38px;
+    margin: 8px 0;
+}
+
+.welcome p {
+    color: #888;
+    font-size: 13px;
+}
+
+.welcome-icon {
+    font-size: 75px;
+    opacity: 0.2;
+}
+
+
+/* ESTADISTICAS */
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin: 25px 0 35px;
+}
+
+.stat-card {
+    background: #111;
+    border: 1px solid #292929;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.stat-icon {
+    width: 48px;
+    height: 48px;
+    background: #241010;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+}
+
+.stat-card span {
+    display: block;
+    color: #777;
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+
+.stat-card strong {
+    font-size: 21px;
+}
+
+
+/* TITULOS */
+
+.section-title {
+    margin-bottom: 18px;
+}
+
+.section-title h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    margin-top: 5px;
+}
+
+
+/* ACCIONES */
+
+.actions-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 35px;
+}
+
+.actions-grid button {
+    border: 1px solid #292929;
+    background: #111;
+    color: #fff;
+    text-align: left;
+    padding: 20px;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.actions-grid button:hover {
+    border-color: #e50914;
+    transform: translateY(-2px);
+}
+
+.actions-grid button span {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.actions-grid strong {
+    display: block;
+    font-size: 14px;
+}
+
+.actions-grid small {
+    display: block;
+    color: #777;
+    font-size: 11px;
+    margin-top: 5px;
+}
+
+
+/* PANELES */
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.panel {
+    background: #111;
+    border: 1px solid #292929;
+    border-radius: 8px;
+    padding: 25px;
+}
+
+.panel-header {
+    margin-bottom: 20px;
+}
+
+.panel-header h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+
+/* ESTADO */
+
+.gym-status {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.status-dot {
+    width: 12px;
+    height: 12px;
+    background: #20d66b;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #20d66b;
+}
+
+.gym-status strong {
+    font-size: 14px;
+}
+
+.gym-status p {
+    color: #777;
+    font-size: 11px;
+    margin-top: 4px;
+}
+
+
+/* BOTON */
+
+.site-button {
+    display: inline-block;
+    background: #e50914;
+    padding: 12px 18px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.site-button:hover {
+    background: #ff1b25;
+}
+
+
+/* FOOTER */
+
+footer {
+    border-top: 1px solid #292929;
+    padding: 20px 35px;
+    color: #555;
+    font-size: 11px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .actions-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 750px) {
+
+    .sidebar {
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+    }
+
+    .sidebar.open {
+        transform: translateX(0);
+    }
+
+    .main {
+        margin-left: 0;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .topbar {
+        padding: 0 20px;
+    }
+
+    .top-user span {
+        display: none;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .welcome {
+        padding: 22px;
+    }
+
+    .welcome h2 {
+        font-size: 30px;
+    }
+
+    .welcome-icon {
+        display: none;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .actions-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        padding: 20px;
+    }
+}
+
+/* ===== Alertas de morosos y vencimientos ===== */
+.alerta-tabla{width:100%;border-collapse:collapse;font-size:14px;margin-top:10px}
+.alerta-tabla th,.alerta-tabla td{padding:8px 6px;text-align:left;border-bottom:1px solid rgba(128,128,128,.25)}
+.alerta-ok{margin-top:10px}
+.alerta-roja{color:#ff4d4d;font-weight:600}
+.alerta-amarilla{color:#e6a100;font-weight:600}

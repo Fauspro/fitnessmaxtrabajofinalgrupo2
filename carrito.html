@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi carrito | Fitness Max</title>
+
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/carrito.css">
+    <link rel="stylesheet" href="assets/css/paginas.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="page-dark">
+
+<!-- HEADER -->
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <a href="index.html" class="logo">
+            FITNESS MAX
+        </a>
+
+        <nav class="nav">
+            <a href="index.html">Inicio</a>
+            <a href="index.html#planes">Planes</a>
+            <a href="actividades.html">Actividades</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="productos.html">Productos</a>
+            <a href="carrito.html" class="active">🛒 Carrito</a>
+        </nav>
+
+        <div class="actions">
+
+            <a href="cuenta.html" class="login">
+                👤 Mi Cuenta
+            </a>
+
+            <button class="menu-btn">
+                ☰
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+<!-- CARRITO COMPLETO -->
+<main>
+
+    <section class="carrito-pagina" id="carrito-pagina">
+
+        <h1>MI CARRITO</h1>
+        <p class="carrito-sub">Revisá tus productos y finalizá la compra eligiendo tarjeta o efectivo.</p>
+
+        <div id="carrito-items"></div>
+
+        <div class="carrito-resumen">
+
+            <div class="cart-total">
+                <span>Total</span>
+                <span id="carrito-total">$0</span>
+            </div>
+
+            <div class="carrito-acciones">
+                <button class="cart-checkout" id="carrito-finalizar">Finalizar compra</button>
+                <button class="cart-clear" id="carrito-vaciar">Vaciar carrito</button>
+            </div>
+
+            <a href="index.html#planes" class="carrito-seguir">← Seguir viendo planes</a>
+
+        </div>
+
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+
+    <p>© 2026 Fitness Max - Todos los derechos reservados · <a href="cuenta.html#admin" style="color:#777">Administrador</a></p>
+
+</footer>
+
+<script src="assets/js/validar.js"></script>
+<script src="assets/js/fm-local.js"></script>
+<script src="assets/js/carrito.js"></script>
+
+</body>
+</html>
